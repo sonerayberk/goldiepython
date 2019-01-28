@@ -55,6 +55,7 @@ def avg_salary(language: str) -> float:
 def avg_age(language: str) -> float:
     return avg_(language, key='age')
 
+avg_salaries = {lang: avg_salary(lang) for lang in languages}
 
 if __name__ == '__main__':
     for lang, items in records.items():
